@@ -98,7 +98,7 @@ class AddReminderActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun addReminder(calender: Calendar) {
-        if (calender.isGreateThan(mCalender))
+        if (calender.isGreaterThan(mCalender))
             toast("Will be added!")
     }
 
@@ -141,7 +141,7 @@ class AddReminderActivity : AppCompatActivity(), View.OnClickListener {
     }
 }
 
-fun Calendar.isGreateThan(other: Calendar): Boolean {
+fun Calendar.isGreaterThan(other: Calendar): Boolean {
     return get(Calendar.DAY_OF_MONTH) > other[Calendar.DAY_OF_MONTH] || get(Calendar.HOUR_OF_DAY) > other[Calendar.HOUR_OF_DAY] ||
             get(Calendar.MINUTE) > other[Calendar.MINUTE]
 }

@@ -1,4 +1,4 @@
-package com.code.pegion.broadcasrReceivers
+package com.code.pegion.broadcastReceivers
 
 import android.content.BroadcastReceiver
 import android.content.Context
